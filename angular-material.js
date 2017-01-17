@@ -9670,7 +9670,7 @@ function MdDialogProvider($$interimElementProvider) {
       };
 
       container.css({
-        top: (isFixed ? $mdUtil.scrollTop(options.parent) : 0) + 'px',
+        top: $mdUtil.scrollTop(options.parent) + 'px',
         height: height ? height + 'px' : '100%'
       });
 
